@@ -1,0 +1,375 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic);
+
+body {
+    font-family: "DM Sans";
+}
+
+// layout
+
+section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.main-container {
+    // w-4/5 md:w-4/6 mx-auto max-w-screen-2xl flex flex-row items-center justify-between
+    width: 80%;
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active{
+    background-color: #fff;
+}
+.main-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pattern-1 {
+    background-image: url("../img/hero-shape.png");
+}
+.pattern-2 {
+    background-image: url("../img/pattern-video-bg.png");
+}
+.pattern-3 {
+    background-image: url("../img/bg-pattern.png");
+}
+.pattern-4 {
+    background-image: url("../img/pattern-subscribe.png");
+}
+
+.main-bg-gradient {
+    background: linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
+}
+
+.main-boxes-col,
+.main-boxes-row {
+    display: flex;
+    margin-bottom: 60px;
+}
+.main-boxes-col {
+    width: 250px;
+    flex-direction: column;
+}
+.main-boxes-row {
+    flex-direction: row;
+    width: 300px;
+    gap: 1.25rem;
+}
+.main-img-icon {
+    position: relative;
+    width: 82px;
+    min-width:82px;
+    height: 82px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+// texts
+
+.main-paragraph {
+    font-size: 15px;
+    line-height: 200%;
+    color: #02073E;
+    font-weight: 100;
+}
+
+.main-p-title {
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 13px;
+    color: #EA3A60;
+    font-weight: 500;
+}
+
+.main-h2-title {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 600;
+    text-align: center;
+    color: #0F2137;
+    letter-spacing: -1.5px;
+    margin-bottom:30px
+}
+.main-h3-title {
+    font-size: 36px;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #0F2137;
+    margin-bottom:100px;
+}
+.main-h5-title{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.55px;
+    color:#0F2137;
+    line-height:28px;
+    margin-bottom:6px;
+}
+.main-h6-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0f2137;
+}
+@media (max-width:1024px){
+    .main-h2-title{
+        font-size: 25px;
+    }
+
+}
+// Buttons started
+
+button {
+    font-size: 16px;
+    line-height: 1rem;
+    font-weight: medium;
+    padding: 10px 15px;
+    border-radius: 999px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    height: 38px !important;
+    min-width: 150px !important;
+}
+
+.btn-border {
+    color: #EA3A60;
+    border: 1px solid #EA3A60;
+}
+
+.btn-border:hover {
+    background: #EA3A60;
+    color: #fff;
+}
+
+.btn-white {
+    background: #EA3A60;
+    color: #fff;
+    border: 1px solid #EA3A60;
+}
+.btn-white-border{
+    border-color: #fff;
+    color:#fff;
+    background: transparent;
+}
+.btn-white-border:hover{
+    background:#fff;
+    color: #EA3A60;
+}
+.btn-dark {
+    background: #EA3A60;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    border-color: #EA3A60;
+    color: #EA3A60;
+    background: transparent;
+}
+
+.btn-white:hover {
+    background: transparent;
+    color: #fff;
+}
+// buttons end
+
+// scrollbar
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #EA3A60;
+}
+
+// anchor hover animation
+.underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.01rem;
+    bottom: 0;
+    left: 0;
+    background: #EA3A60;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+// Accordion
+.accordion__contentBox .accordion__title::before {
+    content: "+";
+    position: relative;
+    left: 0;
+    margin-right: 20px;
+}
+
+.accordion__contentBox.active .accordion__content {
+    height: auto !important;
+    padding-top: 20px;
+}
+
+.accordion__contentBox.active .accordion__title::before {
+    content: "-";
+}
+
+// Responsive menu
+.mobile-burger {
+    background-image: url("../img/burger.png");
+}
+.mobile-burger.active {
+    background-image: url("../img/close-burger.png");
+}
+
+.mobile-menu.active {
+    left: 0 !important;
+}
+
+// Swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Dropdown
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    transition: all .3s;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+    transition: all .3s;
+}
+
+.select-selected {
+    background-color: transparent;
+    transition: all .3s;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top:9px;
+    transition: all .3s;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #02073E;
+    border-bottom: 1px solid #02073E;
+    transform: rotate(45deg);
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    transform: rotate(225deg);
+    transition: all .3s;
+    top: 8px;
+}
+
+/* style the items (options), including the selected item: */
+.select-selected {
+    color:#02073E;
+    cursor: pointer;
+    transition: all .3s;
+    user-select: none;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    transition: all .3s;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 5px 0;
+    background: #fff;
+    overflow:hidden;
+    user-select: none;
+    box-shadow: 0 20px 10px rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+
+.select-items div{
+    padding:5px;
+    color: #02073E;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+    transition: all .3s;
+
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color:rgba(0,0,0,.1);
+    color: #02073E;
+    transition: all .3s;
+    
+}
+@media (max-width: 557px) {
+    .hide-in-500 {
+        display: none;
+    }
+}
+@media (max-width: 420px) {
+    footer .main-container {
+        width: 91.666667% !important;
+    }
+}
+@media (min-width: 420px) {
+    footer .main-container {
+        width: 80% !important;
+    }
+}

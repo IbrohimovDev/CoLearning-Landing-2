@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic);
 
 body {
-    font-family: "DM Sans";
+    font-family: "DM Sans", sans-serif;
 }
 
 // layout
@@ -16,7 +17,6 @@ section {
 }
 
 .main-container {
-    // w-4/5 md:w-4/6 mx-auto max-w-screen-2xl flex flex-row items-center justify-between
     width: 80%;
     max-width: 1536px;
     margin: 0 auto;
@@ -26,9 +26,7 @@ section {
     justify-content: space-between;
 }
 
-.active{
-    background-color: #fff;
-}
+
 .main-bg {
     position: absolute;
     top: 0;
@@ -74,7 +72,7 @@ section {
 .main-img-icon {
     position: relative;
     width: 82px;
-    min-width:82px;
+    min-width: 82px;
     height: 82px;
     border-radius: 35px;
     display: flex;
@@ -88,57 +86,70 @@ section {
 .main-paragraph {
     font-size: 15px;
     line-height: 200%;
-    color: #02073E;
+    color: #02073e;
     font-weight: 100;
 }
 
-.main-p-title {
+.title-xs {
+    // p title
     font-size: 14px;
     line-height: 1rem;
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 13px;
-    color: #EA3A60;
+    color: #ea3a60;
     font-weight: 500;
 }
 
-.main-h2-title {
+.title-xl {
+    // h2
     font-size: 48px;
     line-height: 120%;
     font-weight: 600;
     text-align: center;
-    color: #0F2137;
+    color: #0f2137;
     letter-spacing: -1.5px;
-    margin-bottom:30px
+    margin-bottom: 30px;
 }
-.main-h3-title {
+.title-lg {
+    // h3
     font-size: 36px;
     line-height: 1.75rem;
     font-weight: 600;
     text-align: center;
-    color: #0F2137;
-    margin-bottom:100px;
+    color: #0f2137;
+    margin-bottom: 100px;
 }
-.main-h5-title{
+.title-md {
+    // h5
     font-size: 22px;
     font-weight: bold;
     letter-spacing: -0.55px;
-    color:#0F2137;
-    line-height:28px;
-    margin-bottom:6px;
+    color: #0f2137;
+    line-height: 28px;
+    margin-bottom: 6px;
 }
-.main-h6-title {
+.title-sm {
+    // h6
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #0f2137;
 }
-@media (max-width:1024px){
-    .main-h2-title{
+@media (max-width: 1024px) {
+    .title-xl {
         font-size: 25px;
     }
-
 }
+
+// Color
+.text-rose {
+    color: #ea3a60;
+}
+.text-dark-blue {
+    color: #0f2137;
+}
+
 // Buttons started
 
 button {
@@ -154,37 +165,37 @@ button {
 }
 
 .btn-border {
-    color: #EA3A60;
-    border: 1px solid #EA3A60;
+    color: #ea3a60;
+    border: 1px solid #ea3a60;
 }
 
 .btn-border:hover {
-    background: #EA3A60;
+    background: #ea3a60;
     color: #fff;
 }
 
 .btn-white {
-    background: #EA3A60;
+    background: #ea3a60;
     color: #fff;
-    border: 1px solid #EA3A60;
+    border: 1px solid #ea3a60;
 }
-.btn-white-border{
+.btn-white-border {
     border-color: #fff;
-    color:#fff;
+    color: #fff;
     background: transparent;
 }
-.btn-white-border:hover{
-    background:#fff;
-    color: #EA3A60;
+.btn-white-border:hover {
+    background: #fff;
+    color: #ea3a60;
 }
-.btn-dark {
-    background: #EA3A60;
+.btn-rose {
+    background: #ea3a60;
     color: #fff;
 }
 
-.btn-dark:hover {
-    border-color: #EA3A60;
-    color: #EA3A60;
+.btn-rose:hover {
+    border-color: #ea3a60;
+    color: #ea3a60;
     background: transparent;
 }
 
@@ -203,7 +214,7 @@ button {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: #EA3A60;
+    background: #ea3a60;
 }
 
 // anchor hover animation
@@ -221,7 +232,7 @@ button {
     height: 0.01rem;
     bottom: 0;
     left: 0;
-    background: #EA3A60;
+    background: #ea3a60;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
@@ -279,85 +290,104 @@ button {
 /* The container must be positioned relative: */
 .custom-select {
     position: relative;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .custom-select select {
     display: none; /*hide original SELECT element: */
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .select-selected {
     background-color: transparent;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 /* Style the arrow inside the select element: */
 .select-selected:after {
     position: absolute;
     content: "";
-    top:9px;
-    transition: all .3s;
+    top: 9px;
+    transition: all 0.3s;
     right: 4px;
     width: 6px;
     height: 6px;
-    border-right: 1px solid #02073E;
-    border-bottom: 1px solid #02073E;
+    border-right: 1px solid #02073e;
+    border-bottom: 1px solid #02073e;
     transform: rotate(45deg);
 }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
     transform: rotate(225deg);
-    transition: all .3s;
-    top: 8px;
+    transition: all 0.3s;
+    top: 10px;
 }
 
 /* style the items (options), including the selected item: */
 .select-selected {
-    color:#02073E;
+    color: #02073e;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
     user-select: none;
 }
 
 /* Style items (options): */
 .select-items {
     position: absolute;
-    transition: all .3s;
+    transition: all 0.3s;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
     padding: 5px 0;
     background: #fff;
-    overflow:hidden;
+    overflow: hidden;
     user-select: none;
-    box-shadow: 0 20px 10px rgba(0,0,0,.5);
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 
-.select-items div{
-    padding:5px;
-    color: #02073E;
+.select-items div {
+    padding: 5px;
+    color: #02073e;
     cursor: pointer;
-    transition: all .3s;
-
+    transition: all 0.3s;
 }
 /* Hide the items when the select box is closed: */
 .select-hide {
     display: none;
-    transition: all .3s;
-
+    transition: all 0.3s;
 }
 
 .select-items div:hover,
 .same-as-selected {
-    background-color:rgba(0,0,0,.1);
-    color: #02073E;
-    transition: all .3s;
-    
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #02073e;
+    transition: all 0.3s;
 }
+
+//  Tab
+.tab {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Change background color of buttons on hover */
+.tab div:hover {
+    background-color: rgb(240, 239, 239);
+}
+
+/* Create an active/current tablink class */
+.tab div.active {
+    background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+}
+
 @media (max-width: 557px) {
     .hide-in-500 {
         display: none;

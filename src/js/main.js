@@ -14,7 +14,6 @@ const burger = document.querySelector('.mobile-burger')
 burger.onclick = () => {
   menu.classList.toggle('active')
   burger.classList.toggle('active')
-  body.classList.toggle('active')
 }
 
 // Hide mobile menu onclick anchor 
@@ -23,8 +22,6 @@ anchor.forEach(item => {
   item.onclick = () => {
     menu.classList.remove('active')
     burger.classList.remove('active')
-    body.classList.remove('active')
-
   }
 })
 
@@ -160,10 +157,37 @@ let callback = (entries, observer) => {
 let observer = new IntersectionObserver(callback, options)
 observer.observe(document.querySelector('.video'))
 
+
+// Tab
+
+function openCard(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.opacity = "0";
+    tabcontent[i].style.visibility = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.opacity = "1";
+  document.getElementById(cityName).style.position = "absolute";
+  document.getElementById(cityName).style.top = "0";
+  document.getElementById(cityName).style.visibility = "visible";
+  
+  evt.currentTarget.className += " active";
+}
+
+
 // // Swiper js
 var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     spaceBetween: 38,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
     breakpoints: {
         0:{
             slidesPerView: 1
@@ -194,6 +218,10 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".blogSwiper", {
     freeMode: true,
     spaceBetween: 38,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
     breakpoints: {
         0:{
             slidesPerView: 1

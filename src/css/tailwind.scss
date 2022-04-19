@@ -288,104 +288,40 @@ button {
 
 // Dropdown
 /* The container must be positioned relative: */
-.custom-select {
-    position: relative;
-    transition: all 0.3s;
-}
-
-.custom-select select {
-    display: none; /*hide original SELECT element: */
-    transition: all 0.3s;
-}
-
-.select-selected {
-    background-color: transparent;
-    transition: all 0.3s;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 9px;
-    transition: all 0.3s;
-    right: 4px;
-    width: 6px;
-    height: 6px;
-    border-right: 1px solid #02073e;
-    border-bottom: 1px solid #02073e;
-    transform: rotate(45deg);
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-    transform: rotate(225deg);
-    transition: all 0.3s;
-    top: 10px;
-}
-
-/* style the items (options), including the selected item: */
-.select-selected {
-    color: #02073e;
-    cursor: pointer;
-    transition: all 0.3s;
-    user-select: none;
-}
-
-/* Style items (options): */
-.select-items {
-    position: absolute;
-    transition: all 0.3s;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    padding: 5px 0;
-    background: #fff;
-    overflow: hidden;
-    user-select: none;
-    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-
-.select-items div {
-    padding: 5px;
-    color: #02073e;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-/* Hide the items when the select box is closed: */
-.select-hide {
+.list{
     display: none;
-    transition: all 0.3s;
 }
-
-.select-items div:hover,
-.same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #02073e;
-    transition: all 0.3s;
+.list.active{
+    min-width:100px;
+    display: block;
 }
-
+.chevron-down{
+    transform: none;
+}
+.chevron-down.active{
+    transform: rotate(180deg);
+}
 //  Tab
-.tab {
-    overflow: hidden;
-    cursor: pointer;
-}
-
-/* Change background color of buttons on hover */
-.tab div:hover {
-    background-color: rgb(240, 239, 239);
-}
-
-/* Create an active/current tablink class */
-.tab div.active {
+.tab-btn.active{
     background-color: #fff;
 }
 
-/* Style the tab content */
-.tabcontent {
-    display: none;
+.tab-body{
+    position: relative;
+    top:-200%;
+    transform:scale(0.9);
+    transition: opacity .3s ease-in-out 0ms,
+                transform .3s ease-in-out 0ms;
+    opacity: 0;
+    margin-top:10px;
+}
+.tab-body.active{
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition-delay: .35s;
+    transform: scale(1);
+    margin-top: 0;
 }
 
 @media (max-width: 557px) {

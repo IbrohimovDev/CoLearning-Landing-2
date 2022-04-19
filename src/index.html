@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agency Modern</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -39,6 +40,7 @@
                                     <option value="11">Toyota</option>
                                     <option value="12">Volvo</option>
                                 </select>
+                                <img src="./img/chevron-down.png" alt="">
                             </div>
                         </li>
                         <li class="text-base font-thin mt-2">
@@ -72,43 +74,59 @@
                     <ul class="flex justify-between select-none">
                         <li class="text-base font-thin underline-animation"><a class="no-underline text-[#02073E]"
                                 href="#">Home</a></li>
-                        <li class="text-base font-thin">
-                            <div class="custom-select min-w-[97px]">
-                                <select>
-                                    <option value="0">Advertise</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                </select>
-                            </div>
+                        <li class="relative text-base font-thin flex items-center gap-1">
+                            <a class="no-underline text-[#02073E] ad-selected-value" href="#">Advertise</a> <img
+                                class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
+                            <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 1</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 2</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 3</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 4</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 5</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 6</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 7</li>
+                            </ul>
                         </li>
-                        <li class="text-base font-thin">
-                            <div class="custom-select min-w-[97px]">
-                                <select>
-                                    <option value="0">Supports</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                </select>
-                            </div>
+                        <li class="relative text-base font-thin flex items-center gap-1">
+                            <a class="no-underline text-[#02073E] support-selected-value" href="#">Supports</a> <img
+                                class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
+                            <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 1</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 2</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 3</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 4</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 5</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 6</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 7</li>
+                            </ul>
                         </li>
                         <li class="text-base font-thin underline-animation"><a class="no-underline text-[#02073E]"
                                 href="#">Contacts</a></li>
@@ -386,16 +404,15 @@
         <p class="title-xs">PRICING PLAN</p>
         <h3 class="title-lg">Choose your pricing policy</h3>
         <div class="tab flex flex-row w-72 rounded-md justify-center items-center mb-12 p-1 bg-slate-100">
-            <div onclick="openCard(event, 'monthly')"
-                class="tablinks w-1/2 p-3 text-center rounded-md text-black text-sm font-medium active">Monthly plan
+            <div class="w-1/2 p-3 text-center rounded-md text-black text-sm font-medium cursor-pointer tab-btn active">
+                Monthly plan
             </div>
-            <div onclick="openCard(event, 'annual')"
-                class="tablinks w-1/2 p-3 text-center rounded-md text-black text-sm font-medium">Annual plan</div>
+            <div class="w-1/2 p-3 text-center rounded-md text-black text-sm font-medium cursor-pointer tab-btn">Annual
+                plan</div>
         </div>
 
         <div class="main-container relative min-h-[500px]">
-            <div class="flex items-stretch flex-row flex-wrap justify-around tabcontent z-40"
-                id="monthly">
+            <div class="flex items-stretch flex-row flex-wrap justify-around z-40 tab-body active">
                 <div
                     class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
                     <h5 class="title-md">Free Plan</h5>
@@ -441,7 +458,8 @@
                 <div
                     class="w-[30%] relative min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
                     <div class="absolute flex items-center -top-5 gap-2 bg-[#FFA740] text-white p-2 rounded-md text-sm">
-                        <img src="./img/crown-white.png" alt="white crown">Suggested</div>
+                        <img src="./img/crown-white.png" alt="white crown">Suggested
+                    </div>
                     <h5 class="title-md">Pro Master</h5>
                     <p class="main-paragraph mb-10">For small teams or office</p>
                     <ul>
@@ -462,8 +480,7 @@
                     <p class="text-center text-[#2563FF] text-sm font-bold">Or Start 15 day free trial</p>
                 </div>
             </div>
-            <div class="flex items-stretch flex-row flex-wrap justify-around tabcontent z-30"
-                id="annual">
+            <div class="flex items-stretch flex-row flex-wrap justify-around tab-body z-30">
                 <div
                     class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
                     <h5 class="title-md">Premium Annual</h5>
@@ -509,7 +526,8 @@
                 <div
                     class="w-[30%] relative min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
                     <div class="absolute flex items-center -top-5 gap-2 bg-[#FFA740] text-white p-2 rounded-md text-sm">
-                        <img src="./img/crown-white.png" alt="white crown">Suggested</div>
+                        <img src="./img/crown-white.png" alt="white crown">Suggested
+                    </div>
                     <h5 class="title-md">Pro Annual</h5>
                     <p class="main-paragraph mb-10">For small teams or office</p>
                     <ul>
@@ -910,9 +928,12 @@
                         </div>
                     </div>
                 </div>
-                <img class="prev h-4 w-10 top-[100%] left-auto right-1/2 rotate-180" src="./img/arrow-right.png" alt="">
-                <img class="next h-4 w-10 top-[100%] left-[51%] " src="./img/arrow-right.png" alt="">
 
+            </div>
+            <div class="flex items-center">
+                <img class="relative h-4 w-10 top-[100%] left-1/2 rotate-180" src="./img/arrow-right.png"
+                    alt="arrow left">
+                <img class="relative h-4 w-10 top-[100%] left-[51%] " src="./img/arrow-right.png" alt="arrow-right">
             </div>
         </div>
     </section>
@@ -1000,10 +1021,11 @@
                     </div>
                 </div>
             </div>
-
-            <img class="prev h-4 w-10 top-[100%] left-auto right-1/2 rotate-180" src="./img/arrow-right.png" alt="">
-            <img class="next h-4 w-10 top-[100%] left-[51%] " src="./img/arrow-right.png" alt="">
-
+            <div class="flex items-center">
+                <img class="relative h-4 w-10 top-[100%] left-1/2 rotate-180" src="./img/arrow-right.png"
+                    alt="arrow left">
+                <img class="relative h-4 w-10 top-[100%] left-[51%] " src="./img/arrow-right.png" alt="arrow-right">
+            </div>
         </div>
     </section>
 

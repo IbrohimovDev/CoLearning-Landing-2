@@ -23,44 +23,59 @@
                     <ul class="flex flex-col min-h-full select-none">
                         <li class="text-base font-thin underline-animation mt-2"><a class="no-underline text-[#02073E]"
                                 href="#">Home</a></li>
-                        <li class="text-base font-thin mt-2">
-                            <div class="custom-select min-w-[97px]">
-                                <select>
-                                    <option value="0">Advertise</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                </select>
-                                <img src="./img/chevron-down.png" alt="">
-                            </div>
-                        </li>
-                        <li class="text-base font-thin mt-2">
-                            <div class="custom-select min-w-[97px]">
-                                <select>
-                                    <option value="0">Supports</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Citroen</option>
-                                    <option value="4">Ford</option>
-                                    <option value="5">Honda</option>
-                                    <option value="6">Jaguar</option>
-                                    <option value="7">Land Rover</option>
-                                    <option value="8">Mercedes</option>
-                                    <option value="9">Mini</option>
-                                    <option value="10">Nissan</option>
-                                    <option value="11">Toyota</option>
-                                    <option value="12">Volvo</option>
-                                </select>
-                            </div>
+                                <li class="relative text-base font-thin flex items-center gap-1">
+                                    <a class="no-underline text-[#02073E] ad-selected-value" href="#">Advertise</a> <img
+                                        class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
+                                    <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 1</li>
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 2</li>
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 3</li>
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 4</li>
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 5</li>
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 6</li>
+                                        <li
+                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                            Value 7</li>
+                                    </ul>
+                                </li>
+                        <li class="relative text-base font-thin flex items-center gap-1">
+                            <a class="no-underline text-[#02073E] ad-selected-value" href="#">Advertise</a> <img
+                                class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
+                            <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 1</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 2</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 3</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 4</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 5</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 6</li>
+                                <li
+                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    Value 7</li>
+                            </ul>
                         </li>
                         <li class="text-base font-thin underline-animation mt-2"><a class="no-underline text-[#02073E]"
                                 href="#">Contacts</a></li>
@@ -930,25 +945,26 @@
                 </div>
 
             </div>
-            <div class="flex items-center">
-                <img class="relative h-4 w-10 top-[100%] left-1/2 rotate-180" src="./img/arrow-right.png"
-                    alt="arrow left">
-                <img class="relative h-4 w-10 top-[100%] left-[51%] " src="./img/arrow-right.png" alt="arrow-right">
-            </div>
+            
+        </div>
+        <div class="flex relative items-center mt-10 gap-3">
+            <img class="prev absolute h-4 w-10 right-[51%] select-none rotate-180" src="./img/arrow-right.png"
+                alt="arrow left">
+            <img class="next absolute h-4 w-10 left-[51%] select-none " src="./img/arrow-right.png" alt="arrow-right">
         </div>
     </section>
 
-    <section class="flex flex-col items-center relative mb-14">
+    <section>
         <p class="title-xs">OUR BLOG</p>
-        <h3 class="title-lg max-w-[600px] leading-[120%]">Explore our products for your business solution</h3>
-        <div class="main-container overflow-hidden items-stretch justify-around flex-row flex-wrap">
-            <div class="swiper blogSwiper">
+        <h3 class="title-lg max-w-[600px] leading-[120%] relative left-1/2 -translate-x-1/2">Explore our products for your business solution</h3>
+        <div class="main-container items-stretch justify-around flex-row flex-wrap">
+            <div class="swiper overflow-visible blogSwiper">
                 <div class="swiper-wrapper select-none">
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer hover:scale-110 hover:z-50 hover:opacity-100 shadow-sm">
-                            <div class="h-[239.594px] overflow-hidden">
-                                <img src="./img/girl2.png" alt="girl and laptop">
+                            class="min-w-[300px] w-[350px] relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl2.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -961,9 +977,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer hover:scale-110 hover:z-50 hover:opacity-100 shadow-sm">
-                            <div class="h-[239.594px] overflow-hidden">
-                                <img src="./img/girl3.png" alt="girl and laptop">
+                            class="min-w-[300px] w-[350px] relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -976,9 +992,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer hover:scale-110 hover:z-50 hover:opacity-100 shadow-sm">
-                            <div class="h-[239.594px] overflow-hidden">
-                                <img src="./img/girl.png" alt="girl and laptop">
+                            class="min-w-[300px] w-[350px] overflow-hidden relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -991,9 +1007,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer hover:scale-110 hover:z-50 hover:opacity-100 shadow-sm">
-                            <div class="h-[239.594px] overflow-hidden">
-                                <img src="./img/girl2.png" alt="girl and laptop">
+                            class="min-w-[300px] w-[350px] relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl2.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -1006,9 +1022,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer hover:scale-110 hover:z-50 hover:opacity-100 shadow-sm">
-                            <div class="h-[239.594px] overflow-hidden">
-                                <img src="./img/girl3.png" alt="girl and laptop">
+                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -1021,11 +1037,11 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <img class="relative h-4 w-10 top-[100%] left-1/2 rotate-180" src="./img/arrow-right.png"
-                    alt="arrow left">
-                <img class="relative h-4 w-10 top-[100%] left-[51%] " src="./img/arrow-right.png" alt="arrow-right">
-            </div>
+        </div>
+        <div class="flex relative items-center mt-10 gap-3">
+            <img class="prev-el absolute h-4 w-10 right-[51%] select-none rotate-180" src="./img/arrow-right.png"
+                alt="arrow left">
+            <img class="next-el absolute h-4 w-10 left-[51%] select-none " src="./img/arrow-right.png" alt="arrow-right">
         </div>
     </section>
 

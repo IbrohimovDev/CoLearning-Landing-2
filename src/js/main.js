@@ -100,16 +100,16 @@ observer.observe(document.querySelector('.video'))
 
 // Tab
 let tabs = document.querySelectorAll('.tab-btn'),
-    contents = document.querySelectorAll('.tab-body');
+  contents = document.querySelectorAll('.tab-body');
 
-tabs.forEach((tab, index) =>{
-  tab.addEventListener('click', () =>{
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
     contents.forEach((content) => {
       content.classList.remove('active')
     })
     tabs.forEach((tab) => {
       tab.classList.remove('active')
-      
+
     })
     contents[index].classList.add('active')
     tabs[index].classList.add('active')
@@ -122,7 +122,10 @@ tabs.forEach((tab, index) =>{
 var swiper = new Swiper(".mySwiper", {
   freeMode: true,
   spaceBetween: 38,
-
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  },
   breakpoints: {
     0: {
       slidesPerView: 1
@@ -153,7 +156,10 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".blogSwiper", {
   freeMode: true,
   spaceBetween: 38,
-
+  navigation: {
+    nextEl: '.next-el',
+    prevEl: '.prev-el   ',
+  },
   breakpoints: {
     0: {
       slidesPerView: 1
@@ -171,10 +177,10 @@ var swiper = new Swiper(".blogSwiper", {
       slidesPerView: 3
     },
     1440: {
-      slidesPerView: 3.5
+      slidesPerView: 3
     },
     1800: {
-      slidesPerView: 4
+      slidesPerView: 3
     },
     2000: {
       slidesPerView: 5

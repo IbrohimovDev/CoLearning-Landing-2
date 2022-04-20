@@ -284,7 +284,22 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s !important;
+
 }
+.swiper-slide-next{
+    // hover:scale-110 z-40 hover:z-50 hover:opacity-100
+    transform: scale(1.1) !important;
+    z-index: 50 !important;
+    transition: all .3s !important;
+
+}
+.swiper-slide-next div{
+    opacity: 1 !important;
+    transition: all .3s !important;
+
+}
+
 
 // Dropdown
 /* The container must be positioned relative: */

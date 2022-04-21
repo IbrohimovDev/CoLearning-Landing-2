@@ -47,8 +47,26 @@ section {
 .pattern-3 {
     background-image: url("../img/bg-pattern.png");
 }
-.pattern-4 {
-    background-image: url("../img/pattern-subscribe.png");
+.footer-pattern {
+    position: absolute;
+    width:188.39px;
+    height: 145.32px;
+    opacity: .2;
+    background-repeat: no-repeat;
+    background-image: url("../img/footer-shape.png");
+}
+
+.icon-gradient-1{
+    background: linear-gradient(41deg, #F80759 -4.02%, #BC4E9C 104.02%), #FF4361;
+}
+.icon-gradient-2{
+    background: linear-gradient(41deg, #FF416C -4.02%, #FF4B2B 104.02%), #FF4361;
+}
+.icon-gradient-3{
+    background: linear-gradient(41deg, #FF5858 -4.02%, #F857A6 104.02%), #FF4361;
+}
+.icon-gradient-4{
+    background: linear-gradient(41deg, #F46B45 -4.02%, #EEA849 104.02%), #FF4361;
 }
 
 .main-bg-gradient {
@@ -71,14 +89,15 @@ section {
 }
 .main-img-icon {
     position: relative;
-    width: 82px;
-    min-width: 82px;
-    height: 82px;
-    border-radius: 35px;
+    width: 72px;
+    min-width: 72px;
+    height: 72px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+    box-shadow: 0px 13px 21px rgba(229, 30, 111, 0.3);
 }
 
 // texts
@@ -149,6 +168,8 @@ section {
 .text-dark-blue {
     color: #0f2137;
 }
+
+
 
 // Buttons started
 
@@ -221,7 +242,6 @@ button {
 .underline-animation {
     display: inline-block;
     position: relative;
-    color: #0087ca;
 }
 
 .underline-animation:after {
@@ -270,6 +290,38 @@ button {
 .mobile-menu.active {
     left: 0 !important;
 }
+.menu {
+    &__item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 16px;
+        font-weight: 100;
+        margin-top: 8px;
+        color: #02073e;
+
+    }
+    &__link{
+        text-decoration: none;
+        color: #02073e;
+        transition: all .3s;
+        &:hover{
+            color:#ea3a60;
+        }
+    }
+    &__acc-item{
+        padding: 12px 28px 12px 8px ;
+        transition:all .3s;
+        cursor: pointer;
+        font-size: 14px;
+        color: #02073e;
+        &:hover{
+            background: rgb(241, 245, 249);
+        }
+    }
+}
+
 
 // Swiper
 .swiper {
@@ -278,6 +330,8 @@ button {
 }
 
 .swiper-slide {
+    position: relative;
+    z-index: 40;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -285,17 +339,21 @@ button {
     justify-content: center;
     align-items: center;
     transition: all .3s !important;
-
 }
 .swiper-slide-next{
-    // hover:scale-110 z-40 hover:z-50 hover:opacity-100
     transform: scale(1.1) !important;
     z-index: 50 !important;
     transition: all .3s !important;
-
 }
-.swiper-slide-next div{
+.swiper-slide-next .testimonial{
+    box-shadow: 0px 6px 47px rgba(38, 78, 118, 0.1);
+}
+.testimonial{
+    box-shadow: 0px 10px 47px rgba(38, 78, 118, 0.08);
+}
+.swiper-slide-next .blog__card{
     opacity: 1 !important;
+    box-shadow: 0px 4px 10px rgba(39, 83, 123, 0.12);
     transition: all .3s !important;
 
 }
@@ -316,6 +374,20 @@ button {
 .chevron-down.active{
     transform: rotate(180deg);
 }
+
+// Pricing hover:
+
+.pricing-shadow:hover{
+    box-shadow: 0px 6px 47px rgba(38, 78, 118, 0.1);
+    
+}
+
+// team hover shadow
+
+.team-shadow:hover{
+    box-shadow: 0px 4px 10px rgba(39, 83, 123, 0.12);
+}
+
 //  Tab
 .tab-btn.active{
     background-color: #fff;
@@ -324,7 +396,6 @@ button {
 .tab-body{
     position: relative;
     top:-200%;
-    transform:scale(0.9);
     transition: opacity .3s ease-in-out 0ms,
                 transform .3s ease-in-out 0ms;
     opacity: 0;
@@ -335,7 +406,6 @@ button {
     top: 0;
     opacity: 1;
     transition-delay: .35s;
-    transform: scale(1);
     margin-top: 0;
 }
 
@@ -352,5 +422,10 @@ button {
 @media (min-width: 420px) {
     footer .main-container {
         width: 80% !important;
+    }
+}
+@media (max-width:1132px){
+    .d-none{
+        display: none !important;
     }
 }

@@ -20,130 +20,133 @@
             <nav class="main-container flex-row justify-between items-center py-5">
                 <div
                     class="flex md:hidden w-full min-h-screen absolute top-0 left-[-100%] justify-center items-center bg-slate-300 z-50 duration-300 mobile-menu">
-                    <ul class="flex flex-col min-h-full select-none">
-                        <li class="text-base font-thin underline-animation mt-2"><a class="no-underline text-[#02073E]"
+                    <ul class="flex flex-col min-h-full select-none mobile_menu">
+                        <li class="menu__item"><a class="menu__link underline-animation"
                                 href="#">Home</a></li>
-                                <li class="relative text-base font-thin flex items-center gap-1">
-                                    <a class="no-underline text-[#02073E] ad-selected-value" href="#">Advertise</a> <img
-                                        class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
-                                    <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 1</li>
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 2</li>
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 3</li>
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 4</li>
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 5</li>
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 6</li>
-                                        <li
-                                            class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
-                                            Value 7</li>
-                                    </ul>
-                                </li>
-                        <li class="relative text-base font-thin flex items-center gap-1">
-                            <a class="no-underline text-[#02073E] ad-selected-value" href="#">Advertise</a> <img
+                        <li class="menu__item">
+                            <a class="menu__link ad-selected-value" href="#">Advertise</a> <img
                                 class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
                             <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 1</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 2</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 3</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 4</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 5</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 6</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 7</li>
                             </ul>
                         </li>
-                        <li class="text-base font-thin underline-animation mt-2"><a class="no-underline text-[#02073E]"
+                        <li class="menu__item">
+                            <a class="menu__link ad-selected-value" href="#">Advertise</a> <img
+                                class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
+                            <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
+                                <li
+                                    class="menu__acc-item">
+                                    Value 1</li>
+                                <li
+                                    class="menu__acc-item">
+                                    Value 2</li>
+                                <li
+                                    class="menu__acc-item">
+                                    Value 3</li>
+                                <li
+                                    class="menu__acc-item">
+                                    Value 4</li>
+                                <li
+                                    class="menu__acc-item">
+                                    Value 5</li>
+                                <li
+                                    class="menu__acc-item">
+                                    Value 6</li>
+                                <li
+                                    class="menu__acc-item">
+                                    Value 7</li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a class="menu__link underline-animation"
                                 href="#">Contacts</a></li>
                     </ul>
                 </div>
-                <div class="relative left-1/2 translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                <div class="relative left-1/2 flex items-start gap-2 justify-start translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
                     <img class="hidden md:block" src="./img/logo.png" alt="Crown img and landguru txt">
+                    <p class="font-bold text-xl text-dark-blue opacity-80">Landguru</p>
                     <img class="block md:hidden" src="./img/logo-white.png" alt="white Crown img and landguru txt">
                 </div>
                 <div class="w-[335px] hidden md:block">
                     <ul class="flex justify-between select-none">
-                        <li class="text-base font-thin underline-animation"><a class="no-underline text-[#02073E]"
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation"
                                 href="#">Home</a></li>
-                        <li class="relative text-base font-thin flex items-center gap-1">
-                            <a class="no-underline text-[#02073E] ad-selected-value" href="#">Advertise</a> <img
+                        <li class="menu__item">
+                            <a class="menu__link ad-selected-value" href="#">Advertise</a> <img
                                 class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
                             <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 1</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 2</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 3</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 4</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 5</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 6</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 7</li>
                             </ul>
                         </li>
-                        <li class="relative text-base font-thin flex items-center gap-1">
-                            <a class="no-underline text-[#02073E] support-selected-value" href="#">Supports</a> <img
+                        <li class="menu__item">
+                            <a class="menu__link ad-selected-value" href="#">Supports</a> <img
                                 class="chevron-down duration-300" src="./img/chevron-down.png" alt="">
                             <ul class="absolute list top-7 bg-white shadow-md py-5 rounded-b-md rounded-bl-md">
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 1</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 2</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 3</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 4</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 5</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 6</li>
                                 <li
-                                    class="pl-2 pr-7 py-3 duration-300 cursor-pointer hover:bg-slate-100 text-sm text-dark-blue">
+                                    class="menu__acc-item">
                                     Value 7</li>
                             </ul>
                         </li>
-                        <li class="text-base font-thin underline-animation"><a class="no-underline text-[#02073E]"
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation"
                                 href="#">Contacts</a></li>
                     </ul>
                 </div>
@@ -155,7 +158,7 @@
         </header>
         <div class="main-container mt-40 relative z-40">
             <h1
-                class="main-container text-center font-bold text-2xl sm:text-4xl lg:text-7xl text-dark-blue leading-[80px] tracking-[-0.02em] mb-7">
+                class="main-container text-center font-bold text-2xl sm:text-4xl lg:text-7xl text-dark-blue leading-[150%] tracking-[-0.02em] mb-7">
                 Top Quality Digital Products To Explore</h1>
             <p class="text-center w-4/5 text-lg lg:w-2/5 main-paragraph mb-8">Get your blood tests delivered at let home
                 collect sample from the victory of the managments that supplies
@@ -174,7 +177,7 @@
         <div class="main-container flex-row flex-wrap justify-around mt-20">
             <div class="main-boxes-col w-[200px] min-w-[200px] mr-5">
                 <div>
-                    <div>
+                    <div class="main-img-icon icon-gradient-1">
                         <img src="./img/thunder.png" alt="thunder icon">
                     </div>
                 </div>
@@ -186,7 +189,7 @@
             </div>
             <div class="main-boxes-col w-[200px] min-w-[200px] mr-5">
                 <div>
-                    <div>
+                    <div class="main-img-icon icon-gradient-2">
                         <img src="./img/portfolio.png" alt="portfolio icon">
                     </div>
                 </div>
@@ -198,7 +201,7 @@
             </div>
             <div class="main-boxes-col w-[200px] min-w-[200px] mr-5">
                 <div>
-                    <div>
+                    <div class="main-img-icon icon-gradient-3">
                         <img src="./img/crown.png" alt="crown icon">
                     </div>
                 </div>
@@ -210,7 +213,7 @@
             </div>
             <div class="main-boxes-col w-[200px] min-w-[200px] mr-5">
                 <div>
-                    <div>
+                    <div class="main-img-icon icon-gradient-4">
                         <img src="./img/chat.png" alt="chat icon">
                     </div>
                 </div>
@@ -231,8 +234,10 @@
                 <div
                     class="absolute left-[-120px] bottom-[-100px] w-96 h-96 bg-no-repeat bg-cover bg-center pattern-2 z-[-1]">
                 </div>
-                <video onclick="Play()" src="./img/dog.mp4" class="video" style="width:100% !important">
-                </video>
+                <div class="w-full rounded-[10px] overflow-hidden">
+                    <video onclick="Play()" src="./img/dog.mp4" class="video" style="width:100% !important">
+                    </video>
+                </div>
                 <div onclick="Play()"
                     class="absolute w-28 h-28 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-20">
                     <img class="play duration-300 select-none" src="./img/play.png" alt="play icon">
@@ -242,8 +247,8 @@
                 <p class="title-xs md:text-left text-rose">OUR SERVICES</p>
                 <h2 class="title-xl tracking-[-1.5px] md:text-left mb-14">Business Goals Achieves with Design</h2>
                 <div class="flex flex-col sm:flex-row xl:flex-col gap-5 justify-around">
-                    <div class="main-boxes-col lg:flex-row md:pr-20 w-auto">
-                        <div class="main-img-icon">
+                    <div class="main-boxes-col lg:flex-row md:pr-20 gap-[18px] w-auto">
+                        <div class="main-img-icon icon-gradient-2">
                             <img src="./img/portfolio.png" alt="portfolio icon">
                         </div>
                         <div>
@@ -252,8 +257,8 @@
                                 victory of the managments. your blood tests.</p>
                         </div>
                     </div>
-                    <div class="main-boxes-col lg:flex-row w-auto md:pr-20">
-                        <div class="main-img-icon">
+                    <div class="main-boxes-col lg:flex-row w-auto md:pr-20 gap-[18px]">
+                        <div class="main-img-icon icon-gradient-3">
                             <img src="./img/crown.png" alt="crown icon">
                         </div>
                         <div>
@@ -272,8 +277,8 @@
         <h3 class="title-lg">Amazing useful features</h3>
         <div class="main-container items-stretch">
             <div class="flex flex-col gap-5 sm:flex-row justify-around">
-                <div class="main-boxes-col lg:flex-row md:pr-20 w-auto">
-                    <div class="main-img-icon">
+                <div class="main-boxes-col lg:flex-row md:pr-20 gap-[18px] w-auto">
+                    <div class="main-img-icon icon-gradient-1">
                         <img src="./img/thunder.png" alt="thunder icon">
                     </div>
                     <div>
@@ -284,8 +289,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="main-boxes-col lg:flex-row md:pr-20 w-auto">
-                    <div class="main-img-icon">
+                <div class="main-boxes-col lg:flex-row md:pr-20 gap-[18px] w-auto">
+                    <div class="main-img-icon icon-gradient-2">
                         <img src="./img/crown.png" alt="crown icon">
                     </div>
                     <div>
@@ -298,8 +303,8 @@
                 </div>
             </div>
             <div class="flex flex-col gap-5 sm:flex-row md:flex-row justify-around">
-                <div class="main-boxes-col lg:flex-row md:pr-20 w-auto">
-                    <div class="main-img-icon">
+                <div class="main-boxes-col lg:flex-row md:pr-20 gap-[18px] w-auto">
+                    <div class="main-img-icon icon-gradient-3">
                         <img src="./img/portfolio.png" alt="portfolio icon">
                     </div>
                     <div>
@@ -310,8 +315,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="main-boxes-col lg:flex-row md:pr-20 w-auto">
-                    <div class="main-img-icon">
+                <div class="main-boxes-col lg:flex-row md:pr-20 gap-[18px] w-auto">
+                    <div class="main-img-icon icon-gradient-4">
                         <img src="./img/chat.png" alt="chat icon">
                     </div>
                     <div>
@@ -337,7 +342,7 @@
                 <button class="btn-rose">Get Started</button>
             </div>
             <div class="w-4/6 mx-auto md:w-1/2 relative">
-                <img src="./img/girl.png" class="rounded" alt="girl working on laptop">
+                <img src="./img/girl.png" class="rounded-[10px]" alt="girl working on laptop">
                 <div class="absolute right-[-120px] bottom-[-100px] w-96 h-96 bg-no-repeat bg-cover bg-center pattern-2  z-[-1]"
                     style="transform:rotateY(180deg)">
                 </div>
@@ -346,11 +351,22 @@
     </section>
 
     <section class="relative bg-[#EA3A60]">
-        <div class="main-bg pattern-3"></div>
+        <div class="shape-1 opacity-20 absolute">
+            <img src="./img/shape-1.png" alt="">
+        </div>
+        <div class="shape-2 opacity-20 absolute left-1/2 top-[0]">
+            <img src="./img/shape-2.png" alt="">
+        </div>
+        <div class="shape-3 opacity-20 absolute right-0">
+            <img src="./img/shape-3.png" alt="">
+        </div>
+        <div class="shape-4 opacity-20 absolute bottom-0 left-1/3">
+            <img src="./img/shape-4.png" alt="">
+        </div>
         <p class="title-xs text-white">WHATS THE FUNCTION</p>
         <h3 class="title-lg text-white mb-28">Let's see how it works</h3>
         <div class="main-container items-stretch relative z-40 lg:gap-0 lg:flex-row ">
-            <div class="w-full lg:w-1/2 flex flex-col sm:flex-row">
+            <div class="w-full lg:w-1/2 flex flex-col justify-around sm:flex-row">
                 <div class="main-boxes-col w-4/5 sm:w-auto sm:pr-0 lg:w-[250px] mr-5">
                     <div class="flex gap-5">
                         <div class="main-img-icon text-3xl bg-white text-rose">
@@ -382,7 +398,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-1/2 flex flex-col sm:flex-row">
+            <div class="w-full lg:w-1/2 flex flex-col justify-around sm:flex-row">
                 <div class="main-boxes-col w-4/5 sm:w-auto sm:pr-0 lg:w-[250px] mr-5">
                     <div class="flex gap-5">
                         <div class="main-img-icon text-3xl bg-white text-rose">
@@ -429,7 +445,7 @@
         <div class="main-container relative min-h-[500px]">
             <div class="flex items-stretch flex-row flex-wrap justify-around z-40 tab-body active">
                 <div
-                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
+                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 cursor-pointer border border-solid border-[#F3F4F5] pricing-shadow">
                     <h5 class="title-md">Free Plan</h5>
                     <p class="main-paragraph mb-10">For enterprise Business</p>
                     <ul>
@@ -449,7 +465,7 @@
                     <button class="btn-rose relative left-1/2 translate-x-[-50%]">Start Free trial</button>
                 </div>
                 <div
-                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
+                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 cursor-pointer border border-solid border-[#F3F4F5] pricing-shadow">
 
                     <h5 class="title-md">Business king</h5>
                     <p class="main-paragraph mb-10">For pro level developers</p>
@@ -471,7 +487,7 @@
                     <p class="text-center text-[#2563FF] text-sm font-bold">Or Start 15 day free trial</p>
                 </div>
                 <div
-                    class="w-[30%] relative min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
+                    class="w-[30%] relative min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 cursor-pointer border border-solid border-[#F3F4F5] pricing-shadow">
                     <div class="absolute flex items-center -top-5 gap-2 bg-[#FFA740] text-white p-2 rounded-md text-sm">
                         <img src="./img/crown-white.png" alt="white crown">Suggested
                     </div>
@@ -497,7 +513,7 @@
             </div>
             <div class="flex items-stretch flex-row flex-wrap justify-around tab-body z-30">
                 <div
-                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
+                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 border border-solid border-[#F3F4F5] pricing-shadow">
                     <h5 class="title-md">Premium Annual</h5>
                     <p class="main-paragraph mb-10">For enterprise Business</p>
                     <ul>
@@ -517,7 +533,7 @@
                     <button class="btn-rose relative left-1/2 translate-x-[-50%]">Start Free trial</button>
                 </div>
                 <div
-                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
+                    class="w-[30%] min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 border border-solid border-[#F3F4F5] pricing-shadow">
 
                     <h5 class="title-md">Business Annual</h5>
                     <p class="main-paragraph mb-10">For pro level developers</p>
@@ -539,7 +555,7 @@
                     <p class="text-center text-[#2563FF] text-sm font-bold">Or Start 15 day free trial</p>
                 </div>
                 <div
-                    class="w-[30%] relative min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 shadow hover:shadow-2xl">
+                    class="w-[30%] relative min-w-[300px] mx-auto px-10 mr-5 pt-10 pb-12 duration-300 rounded-xl mb-10 border border-solid border-[#F3F4F5] pricing-shadow">
                     <div class="absolute flex items-center -top-5 gap-2 bg-[#FFA740] text-white p-2 rounded-md text-sm">
                         <img src="./img/crown-white.png" alt="white crown">Suggested
                     </div>
@@ -572,7 +588,7 @@
         </h3>
         <div class="main-container flex-row flex-wrap justify-around items-stretch">
             <div
-                class="group relative hover:shadow-md rounded-md duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
+                class="group relative team-shadow rounded-[10px] duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
                 <div
                     class="absolute bottom-7 right-7 opacity-0 invisible duration-300 group-hover:opacity-100 group-hover:visible flex flex-col w-5 h-24 mb-5 py-[3px] justify-between">
                     <div class="flex items-center">
@@ -597,7 +613,7 @@
                 <p class="group-hover:text-[#EA3A60] main-paragraph">CEO and Founder</p>
             </div>
             <div
-                class="group relative hover:shadow-md rounded-md duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
+                class="group relative team-shadow rounded-[10px] duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
                 <div
                     class="absolute bottom-7 right-7 opacity-0 invisible duration-300 group-hover:opacity-100 group-hover:visible flex flex-col w-5 h-24 mb-5 py-[3px] justify-between">
                     <div class="flex items-center">
@@ -622,7 +638,7 @@
                 <p class="group-hover:text-[#EA3A60] main-paragraph">Web Developer</p>
             </div>
             <div
-                class="group relative hover:shadow-md rounded-md duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
+                class="group relative team-shadow rounded-[10px] duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
                 <div
                     class="absolute bottom-7 right-7 opacity-0 invisible duration-300 group-hover:opacity-100 group-hover:visible flex flex-col w-5 h-24 mb-5 py-[3px] justify-between">
                     <div class="flex items-center">
@@ -646,8 +662,9 @@
                 </h5>
                 <p class="group-hover:text-[#EA3A60] main-paragraph">Web Designer</p>
             </div>
+            <br class="d-none">
             <div
-                class="group relative hover:shadow-md rounded-md duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
+                class="group relative team-shadow rounded-[10px] duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
                 <div
                     class="absolute bottom-7 right-7 opacity-0 invisible duration-300 group-hover:opacity-100 group-hover:visible flex flex-col w-5 h-24 mb-5 py-[3px] justify-between">
                     <div class="flex items-center">
@@ -672,7 +689,7 @@
                 <p class="group-hover:text-[#EA3A60] main-paragraph">Has Nothing ToDo</p>
             </div>
             <div
-                class="group relative hover:shadow-md rounded-md duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
+                class="group relative team-shadow rounded-[10px] duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
                 <div
                     class="absolute bottom-7 right-7 opacity-0 invisible duration-300 group-hover:opacity-100 group-hover:visible flex flex-col w-5 h-24 mb-5 py-[3px] justify-between">
                     <div class="flex items-center">
@@ -697,7 +714,7 @@
                 <p class="group-hover:text-[#EA3A60] main-paragraph">Marketologist</p>
             </div>
             <div
-                class="group relative hover:shadow-md rounded-md duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
+                class="group relative team-shadow rounded-[10px] duration-300 flex flex-col text-center items-center mb-5 py-7 min-w-[300px]">
                 <div
                     class="absolute bottom-7 right-7 opacity-0 invisible duration-300 group-hover:opacity-100 group-hover:visible flex flex-col w-5 h-24 mb-5 py-[3px] justify-between">
                     <div class="flex items-center">
@@ -726,13 +743,13 @@
 
     <section>
         <p class="title-xs">TESTIMONIAL</p>
-        <h3 class="title-lg mb-20">Meet exciting feature of app</h3>
+        <h3 class="title-lg">Meet exciting feature of app</h3>
         <div>
             <div class="pl-[15%] swiper mySwiper">
-                <div class="swiper-wrapper select-none">
+                <div class="swiper-wrapper select-none pt-20">
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with this amazing
@@ -753,7 +770,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with this amazing
@@ -774,7 +791,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with this amazing
@@ -795,7 +812,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with this amazing
@@ -816,7 +833,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="user rating"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with this
@@ -837,7 +854,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with this
@@ -858,7 +875,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work with
@@ -879,7 +896,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design</h6>
                             <p class="main-paragraph mb-5 text-left">Get working experience to work
@@ -900,7 +917,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending design
                             </h6>
@@ -922,7 +939,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl shadow-sm hover:shadow-xl cursor-grab">
+                            class="main-boxes-col w-[400px] duration-300 min-w-[300px] items-start p-5 rounded-xl testimonial cursor-grab">
                             <div><img src="./img/star.png" class="mb-3" alt="rating star"></div>
                             <h6 class="title-sm mb-5">Modern look & trending
                                 design</h6>
@@ -945,7 +962,7 @@
                 </div>
 
             </div>
-            
+
         </div>
         <div class="flex relative items-center mt-10 gap-3">
             <img class="prev absolute h-4 w-10 right-[51%] select-none rotate-180" src="./img/arrow-right.png"
@@ -956,15 +973,17 @@
 
     <section>
         <p class="title-xs">OUR BLOG</p>
-        <h3 class="title-lg max-w-[600px] leading-[120%] relative left-1/2 -translate-x-1/2">Explore our products for your business solution</h3>
+        <h3 class="title-lg max-w-[600px] leading-[120%] relative left-1/2 -translate-x-1/2">Explore our products for
+            your business solution</h3>
         <div class="main-container items-stretch justify-around flex-row flex-wrap">
             <div class="swiper overflow-visible blogSwiper">
                 <div class="swiper-wrapper select-none">
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
                             <div class="h-[305px] overflow-hidden">
-                                <img src="./img/girl2.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
+                                <img src="./img/girl2.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -977,9 +996,10 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
                             <div class="h-[305px] overflow-hidden">
-                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -992,9 +1012,10 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] overflow-hidden relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            class="blog__card min-w-[300px] w-[350px] overflow-hidden-[10px] overflow-hidden relative rounded mb-5 opacity-80 duration-300 cursor-pointer">
                             <div class="h-[305px] overflow-hidden">
-                                <img src="./img/girl.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
+                                <img src="./img/girl.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -1007,9 +1028,10 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
                             <div class="h-[305px] overflow-hidden">
-                                <img src="./img/girl2.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
+                                <img src="./img/girl2.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -1022,9 +1044,90 @@
                     </div>
                     <div class="swiper-slide">
                         <div
-                            class="min-w-[300px] w-[350px] relative rounded overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer shadow-sm">
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
                             <div class="h-[305px] overflow-hidden">
-                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center" alt="girl and laptop">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
+                            </div>
+                            <div class="p-7">
+                                <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="main-paragraph text-rose">Cali Cartel</p>
+                                    <p class="main-paragraph font-thin text-[#343D48]">Sep 20, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
+                            </div>
+                            <div class="p-7">
+                                <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="main-paragraph text-rose">Cali Cartel</p>
+                                    <p class="main-paragraph font-thin text-[#343D48]">Sep 20, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
+                            </div>
+                            <div class="p-7">
+                                <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="main-paragraph text-rose">Cali Cartel</p>
+                                    <p class="main-paragraph font-thin text-[#343D48]">Sep 20, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
+                            </div>
+                            <div class="p-7">
+                                <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="main-paragraph text-rose">Cali Cartel</p>
+                                    <p class="main-paragraph font-thin text-[#343D48]">Sep 20, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
+                            </div>
+                            <div class="p-7">
+                                <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
+                                <div class="flex items-center justify-between">
+                                    <p class="main-paragraph text-rose">Cali Cartel</p>
+                                    <p class="main-paragraph font-thin text-[#343D48]">Sep 20, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="blog__card min-w-[300px] w-[350px] relative rounded-[10px] overflow-hidden mb-5 opacity-80 duration-300 cursor-pointer">
+                            <div class="h-[305px] overflow-hidden">
+                                <img src="./img/girl3.png" class="h-full min-w-[150%] w-[150%] bg-center"
+                                    alt="girl and laptop">
                             </div>
                             <div class="p-7">
                                 <h5 class="title-md text-dark-blue mb-7">Product Marketing: Monopoly Market</h5>
@@ -1041,13 +1144,21 @@
         <div class="flex relative items-center mt-10 gap-3">
             <img class="prev-el absolute h-4 w-10 right-[51%] select-none rotate-180" src="./img/arrow-right.png"
                 alt="arrow left">
-            <img class="next-el absolute h-4 w-10 left-[51%] select-none " src="./img/arrow-right.png" alt="arrow-right">
+            <img class="next-el absolute h-4 w-10 left-[51%] select-none " src="./img/arrow-right.png"
+                alt="arrow-right">
         </div>
     </section>
 
     <section class="mb-10">
         <div class="main-container relative justify-center py-12 min-h-[372px] rounded-md z-40 bg-[#EA3A60]">
-            <div class="main-bg pattern-4"></div>
+            <div class="footer-pattern left-0 top-0">
+            </div>
+            <div class="footer-pattern right-0 top-0" style="transform: rotateY(180deg)">
+            </div>
+            <div class="footer-pattern left-0 bottom-0 rotate-x-180" style="transform: rotateX(180deg)">
+            </div>
+            <div class="footer-pattern right-0 bottom-0 rotate-180">
+            </div>
             <h3 class="title-lg text-white mb-7">Subscribe to our Blog</h3>
             <p class="main-paragraph text-white max-w-[546px] mb-14 text-center">Lorem ipsum dolor sit amet consectetur
                 adipiscing
@@ -1062,8 +1173,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="main-container items-center justify-evenly flex-row flex-wrap mt-14 mb-28">
+    <section
+        <div class="main-container items-center justify-evenly flex-row flex-wrap mt-14 mb-14">
             <div class="main-boxes-col items-center">
                 <div>
                     <img src="./img/chat-pro.png" alt="chat icon">
@@ -1098,19 +1209,19 @@
     <hr class="w-4/5 relative left-1/2 -translate-x-[50%] border-t border-solid border-[#E5ECF4]">
     <footer class="py-16 flex flex-col items-center">
         <img src="./img/footer-logo.png" alt="logo">
-        <ul class="flex flex-col sm:flex-row min-h-full select-none mt-7 mb-3">
-            <li class="text-base font-thin underline-animation mr-3 mt-2"><a class="no-underline text-dark-blue"
+        <ul class="flex flex-col sm:flex-row min-h-full w-[447px] justify-evenly select-none mt-7 mb-3 menu">
+            <li class="menu__item underline-animation"><a class="menu__link"
                     href="#">Home</a></li>
 
-            <li class="text-base font-thin underline-animation mr-3 mt-2"><a class="no-underline text-dark-blue"
+            <li class="menu__item underline-animation"><a class="menu__link"
                     href="#">Advertise</a></li>
 
-            <li class="text-base font-thin underline-animation mr-3 mt-2"><a class="no-underline text-dark-blue"
+            <li class="menu__item underline-animation"><a class="menu__link"
                     href="#">Supports</a></li>
-            <li class="text-base font-thin underline-animation mr-3 mt-2"><a class="no-underline text-dark-blue"
+            <li class="menu__item underline-animation"><a class="menu__link"
                     href="#">Marketing</a></li>
 
-            <li class="text-base font-thin underline-animation mr-3 mt-2"><a class="no-underline text-dark-blue"
+            <li class="menu__item underline-animation"><a class="menu__link"
                     href="#">Contacts</a></li>
         </ul>
         <p class="main-paragraph text-center text-dark-blue">Copyright 2019 By Redq, Inc</p>
